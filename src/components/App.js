@@ -8,7 +8,7 @@ const App = () => {
     const expenseInput = document.getElementById('expense-input')
     const expense = expenseInput.value.trim()
     if (expense !== '') {
-      const espenseArr = expense.split('-')
+      const espenseArr = expense.split(' - ')
       const itemName = espenseArr[0]
       const itemPrice = parseFloat(espenseArr[1])
       if (!isNaN(itemPrice)) {
